@@ -158,8 +158,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Check if the "Delete All" menu item was selected
         if(item.getItemId() == R.id.delete_all) {
-            // Show a toast and open the confirmation dialog
-            Toast.makeText(this, "All data deleted!", Toast.LENGTH_SHORT).show();
+            // Open the confirmation dialog
             confirmDialog();
         }
         return super.onOptionsItemSelected(item);

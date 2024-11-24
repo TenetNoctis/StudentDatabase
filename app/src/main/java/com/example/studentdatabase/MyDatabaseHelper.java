@@ -129,9 +129,11 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    // Method to delete all student records from the database
-    public void deleteAllData() {
-        SQLiteDatabase db = this.getWritableDatabase(); // Get writable database
-        db.execSQL("DELETE FROM " + TABLE_NAME); // Delete all rows from the table
+    // Method to delete all student records from the database and reset ID to 1
+    void deleteAllData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+        db.execSQL("DELETE FROM sqlite_sequence WHERE name='" + TABLE_NAME + "'");
+        Toast.makeText(context, "All Data Deleted. ID reset to 1.", Toast.LENGTH_SHORT).show();
     }
 }
