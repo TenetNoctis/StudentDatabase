@@ -4,6 +4,8 @@
  * This activity handles user login functionality for the Student Database application.
  * It validates the username and password entered by the user and grants access to
  * the main application if the credentials are correct.
+ * Username: Admin
+ * Password: 123
 
  * Author: Abdulla Nibah Hussain
  * Date: 24/11/2024
@@ -29,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Set a light theme for the login activity (no action bar)
+        // Set a light theme for the login activity with no action bar
         setTheme(androidx.appcompat.R.style.Theme_AppCompat_Light_NoActionBar);
         setContentView(R.layout.activity_login);
 

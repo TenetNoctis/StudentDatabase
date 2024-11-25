@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(androidx.appcompat.R.style.Theme_AppCompat_Light_NoActionBar); // Set theme for splash screen
+        setTheme(androidx.appcompat.R.style.Theme_AppCompat_Light_NoActionBar); // Set theme for splash screen (no action bar)
         setContentView(R.layout.activity_splash); // Set layout for the splash screen
 
         // Create a Handler to delay the transition to the LoginActivity

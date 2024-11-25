@@ -96,9 +96,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             intent.putExtra("name", student_name.get(position));
             intent.putExtra("number", student_num.get(position));
             intent.putExtra("mail", student_mail.get(position));
-            intent.putExtra("physics", student_physics.get(position)); // Pass physics marks
-            intent.putExtra("math", student_math.get(position));       // Pass math marks
-            intent.putExtra("grade", grade.get(position));              // Pass grade
+            intent.putExtra("physics", student_physics.get(position));
+            intent.putExtra("math", student_math.get(position));
+            intent.putExtra("grade", grade.get(position));
             activity.startActivityForResult(intent, 1);  // Start UpdateActivity and expect a result
         });
     }
